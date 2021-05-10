@@ -1,4 +1,4 @@
-# BDT-CS523
+# BDT-Project
 
 Big Data Technology - CS523
 
