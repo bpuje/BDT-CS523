@@ -1,0 +1,11 @@
+testing data is here
+
+Spark offers a far faster way to process data than passing it through multiple unnecessary Hadoop MapReduce processes.
+Spark offers a far faster way to process data than passing it through multiple unnecessary Hadoop MapReduce processes.
+Spark offers a far faster way to process data than passing it through multiple unnecessary Hadoop MapReduce processes.
+
+Spark consists of several purpose-built components - Spark Core, Spark SQL, Spark Streaming, Spark GraphX, and Spark Mllib.
+
+Running Spark on YARN provides the tightest integration with other Hadoop components and is the most convenient way to use Spark when you have an existing Hadoop cluster.
+
+These components make Spark a feature-packed unifying platform: it can be used for many tasks that previously had to be accomplished with several different frameworks.

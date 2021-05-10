@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cs523.project</groupId>
+  <artifactId>finalProject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>CS523 Final Project</name>
+  <description>CS523 Final Project</description>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+     <dependency>
+  		<groupId>org.apache.spark</groupId>
+  		<artifactId>spark-core_2.11</artifactId>
+  		<version>2.4.4</version>
+  		<scope>provided</scope>
+  	</dependency>
+  	
+	<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+	<dependency>
+	    <groupId>org.apache.spark</groupId>
+	    <artifactId>spark-sql_2.11</artifactId>
+	    <version>2.4.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive -->
+	<dependency>
+	    <groupId>org.apache.spark</groupId>
+	    <artifactId>spark-hive_2.11</artifactId>
+	    <version>2.4.4</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming -->
+	<dependency>
+		<groupId>org.apache.spark</groupId>
+		<artifactId>spark-streaming_2.11</artifactId>
+		<version>2.4.4</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka -->
+	<dependency>
+	    <groupId>org.apache.spark</groupId>
+	    <artifactId>spark-streaming-kafka_2.11</artifactId>
+	    <version>1.6.3</version>
+	</dependency>
+
+
+  	<!-- https://mvnrepository.com/artifact/org.json/json -->
+	<dependency>
+	    <groupId>org.json</groupId>
+	    <artifactId>json</artifactId>
+	    <version>20171018</version>
+	</dependency>
+
+	<!-- Kafka -->
+	<dependency>
+		<groupId>org.apache.kafka</groupId>
+		<artifactId>kafka_2.11</artifactId>
+		<version>0.8.2.0</version>
+	</dependency>
+	
+	<!-- kafka client -->
+	<dependency>
+		<groupId>org.apache.kafka</groupId>
+		<artifactId>kafka-clients</artifactId>
+		<version>0.8.2.0</version>
+	</dependency>
+	
+	<!-- kafka json -->
+	<dependency>
+		<groupId>org.apache.kafka</groupId>
+		<artifactId>connect-json</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+
+ 	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-core</artifactId>
+	    <version>2.12.3</version>
+	</dependency>
+
+  	
+  </dependencies>
+	<repositories>
+	    <repository>
+	      <snapshots>
+	        <enabled>false</enabled>
+	      </snapshots>
+	      <id>central</id>
+	      <name>Central Repository</name>
+	      <url>https://repo.maven.apache.org/maven2</url>
+	    </repository>
+	  </repositories>
+	  <pluginRepositories>
+	    <pluginRepository>
+	      <releases>
+	        <updatePolicy>never</updatePolicy>
+	      </releases>
+	      <snapshots>
+	        <enabled>false</enabled>
+	      </snapshots>
+	      <id>central</id>
+	      <name>Central Repository</name>
+	      <url>https://repo.maven.apache.org/maven2</url>
+	    </pluginRepository>
+	  </pluginRepositories>
+</project>
